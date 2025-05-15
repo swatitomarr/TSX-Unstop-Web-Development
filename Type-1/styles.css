@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 40px;
+}
+  
+  
+  h1 {
+    color: #ffcc70;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
+  }
+  
+  
+  p {
+    font-size: 1.25rem;
+    color: #b0c4de;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-left: 5px solid #ffcc70;
+    border-radius: 10px;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+ 
+#myButton {
+    background-color: #ffcc70;
+    color: #121212;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 204, 112, 0.3);
+    display: block;
+    margin: 40px auto;
+  }
+  
+  
+  #myButton:hover {
+    background-color: #ffe29a;
+    box-shadow: 0 6px 12px rgba(255, 204, 112, 0.5);
+    transform: scale(1.05);
+  }
+  
+ 
+  #myButton:active {
+    transform: scale(0.98);
+    background-color: #e6b65c;
+  }
+  

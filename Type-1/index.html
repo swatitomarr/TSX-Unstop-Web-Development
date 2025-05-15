@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Web Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Hello, World!</h1>
+  <p>Hi world! I'm Swati Tomar — a simple, ambitious girl currently wrestling with this "simple" assessment 
+    (which, by the way, is not as simple as it claims). The world you see here? Nope, 
+    that’s just the trailer. My real world is way more dramatic, like a Bollywood plot twist! 
+    I'm a student at the National Institute of Technology, Agartala, proudly surviving the rollercoaster of 
+    Electrical Engineering. But guess what? I'm not just sticking to wires and circuits — I'm learning skills 
+    far beyond my branch (because why not make life even more exciting, right?). The future? I hope it’s kind — to me 
+    and to every dreamer out there who’s trying, failing, learning, and trying again. Let’s just say: 
+    may our coffee be strong, our code bug-free, and our ambitions louder than our doubts!</p>
+
+  <button id="myButton">Click Me!</button>
+
+  <script>
+    
+    console.log("Page has loaded!");
+
+    
+    const button = document.getElementById("myButton");
+    button.addEventListener("click", function() {
+      console.log("Button was clicked!");
+      
+     
+      alert("Hello from JavaScript!");
+
+     
+      button.textContent = "Clicked!";
+    });
+  </script>
+
+</body>
+</html>

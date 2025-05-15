@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Green Sips - Healthy Drink Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    
+    <h1>🌱 Green Sips</h1>
+    
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Offers</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="cart">
+        🛒 <span id="cart-count">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro-card">
+      <div class="intro-content">
+        <h2>
+          Grand Opening: <span class="brand">Green Sips</span> is Here!
+        </h2>
+        <div class="subtext-container">
+            <p class="subtext">
+              Step into a world of flavor and sustainability.
+              At <span class="brand">Green Sips</span>, every bottle delivers a promise —
+              crafted with organic goodness and served in eco-friendly style.
+            </p>
+            <p class="subtext">
+              Whether you're craving a tangy citrus burst or a calming matcha chill, we’ve got your vibe in a bottle.
+            </p>
+          </div>
+        <p class="tagline">
+           Taste healthy. Drink green. Live clean.
+        </p>
+        <a href="#menu" class="btn-green">Explore Menu</a>
+      </div>
+    </section>
+  </main>
+  
+     <section class="card-grid">
+      <!-- Drink Cards -->
+      <div class="drink-card" onclick="openModal('Green Detox', 'Spinach, cucumber, lime & mint – your perfect detox buddy 🌿')">
+        <img src="green-detox.jpg" alt="Green Detox Juice">
+        <h3>Green Detox</h3>
+        <p>Spinach, cucumber, lime & mint</p>
+        <button class="buy-btn" onclick="event.stopPropagation(); addToCart()">Buy Now</button>
+      </div>
+
+      <div class="drink-card" onclick="openModal('Citrus Burst', 'Orange, lemon, turmeric – immunity boosting and revitalizing 🍊')">
+        <img src="citrus-burst.jpg" alt="Citrus Burst">
+        <h3>Citrus Burst</h3>
+        <p>Orange, lemon, turmeric</p>
+        <button class="buy-btn" onclick="event.stopPropagation(); addToCart()">Buy Now</button>
+      </div>
+
+      <div class="drink-card" onclick="openModal('Berry Boost', 'Strawberries, blueberries, flaxseed – antioxidants galore 🍓')">
+        <img src="berry-boost.jpg" alt="Berry Boost">
+        <h3>Berry Boost</h3>
+        <p>Strawberries, blueberries, flaxseed</p>
+        <button class="buy-btn" onclick="event.stopPropagation(); addToCart()">Buy Now</button>
+      </div>
+
+      <div class="drink-card" onclick="openModal('Coco Chill', 'Pure coconut water with aloe – hydrate naturally 🥥')">
+        <img src="coco-chill.jpg" alt="Coco Chill">
+        <h3>Coco Chill</h3>
+        <p>Coconut water + aloe</p>
+        <button class="buy-btn" onclick="event.stopPropagation(); addToCart()">Buy Now</button>
+      </div>
+
+      <div class="drink-card" onclick="openModal('Matcha Magic', 'Japanese matcha, oat milk & honey – calm + focus ☕')">
+        <img src="matcha-magic.jpg" alt="Matcha Magic">
+        <h3>Matcha Magic</h3>
+        <p>Matcha, oat milk & honey</p>
+        <button class="buy-btn" onclick="event.stopPropagation(); addToCart()">Buy Now</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact Form in Footer -->
+  <footer>
+    <h3>Contact Us</h3>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>© 2025 Green Sips. Drink clean. Live green. 🌎</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal()" class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919999999999" target="_blank" class="whatsapp-btn" title="Chat with us on WhatsApp">
+    💬
+  </a>
+
+  <script>
+    let cartCount = 0;
+    function openModal(title, desc) {
+      document.getElementById("modal-title").textContent = title;
+      document.getElementById("modal-desc").textContent = desc;
+      document.getElementById("modal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+
+    function addToCart() {
+      cartCount++;
+      document.getElementById("cart-count").textContent = cartCount;
+      alert("Item added to cart!");
+    }
+
+    window.onclick = function (e) {
+      if (e.target === document.getElementById("modal")) {
+        closeModal();
+      }
+    };
+
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thanks for contacting Green Sips!");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
+
+
+
