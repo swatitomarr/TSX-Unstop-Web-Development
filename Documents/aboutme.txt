@@ -1,0 +1,16 @@
+Greetings Techsonixsolutions Team,
+
+My name is Swati Tomar, currently in my 3rd year pursuing B.Tech in Electrical Engineering from the National Institute of 
+Technology, Agartala.
+
+I am sincerely grateful to Techsonix Solutions for giving me this opportunity to work as a web development intern. 
+During this internship, I’ve been assigned two assignments and a major project — developing a personal portfolio 
+website using HTML, CSS, and JavaScript. This project has allowed me to apply my knowledge, strengthen my frontend
+ development skills, and gain practical exposure to real-world tasks.
+
+I truly appreciate the trust and support you've given me, and I’m dedicated to putting in my best efforts throughout 
+this internship. Thank you once again for this wonderful learning opportunity.
+
+With gratitude,
+
+Swati Tomar
