@@ -2,7 +2,7 @@
 
 
 
-![Developer Portoflio](https://github.com/itsvijaysingh/My-Portfolio/blob/main/Developer%20Portolio%20Website.png)
+![Developer Portoflio](https://github.com/swatitomarr/TSX-Unstop-Web-Development/blob/main/My%20Portfolio/Developer%20Portfolio.jpg)
 
 
 Hi there! I'm Swati, and this is my portfolio website code built with HTML, CSS, Bootstrap, and a touch of JavaScript. Let's dive into the features:
